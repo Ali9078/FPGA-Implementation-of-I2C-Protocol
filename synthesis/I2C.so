@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<SynplifyOutput>
+	<result>Success</result>
+	<design>I2C</design>
+	<target_verilog>E:\Verilog_1st_year\I2C\synthesis\I2C.vm</target_verilog>
+</SynplifyOutput>
