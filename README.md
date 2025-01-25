@@ -22,7 +22,7 @@ The Inter-Integrated Circuit (I2C) is a synchronous, multi-master, multi-slave s
 - I2C master implementation in Verilog
 - Configurable clock speed
 - Verified with GMC counter
-- Real-time data visualization on a digital oscilloscope
+
 
 ---
 
