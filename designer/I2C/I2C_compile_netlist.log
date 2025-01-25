@@ -1,0 +1,35 @@
+Warning: CMPG4-007: Top level port DEVRST_N is not connected to any IO pad
+Warning: CMPG4-007: Top level port data[7] is not connected to any IO pad
+Warning: CMPG4-007: Top level port data[6] is not connected to any IO pad
+Warning: CMPG4-007: Top level port data[5] is not connected to any IO pad
+Warning: CMPG4-007: Top level port data[4] is not connected to any IO pad
+Warning: CMPG4-007: Top level port data[3] is not connected to any IO pad
+Warning: CMPG4-007: Top level port data[2] is not connected to any IO pad
+Warning: CMPG4-007: Top level port data[1] is not connected to any IO pad
+Warning: CMPG4-007: Top level port data[0] is not connected to any IO pad
+
+===============================================================================.
+
+Info: Global design data: 
+      Total globals:                       2 
+      Globals that cannot be demoted:      1 
+      Globals considered for demotion:     1 
+
+
+Info: List of globals that cannot be demoted: 
+    CLK    ASYN   DATA   Instance Name 
+    ---    ----   ----   ------------- 
+    9      0      0      'I2C_sb_0/CCC_0/GL0_INST' 
+
+Info: List of globals considered for demotion: 
+    CLK    ASYN   DATA   Instance Name 
+    ---    ----   ----   ------------- 
+    19     0      1      'i2c_top_0/uut/i2c_clk_inferred_clock_RNI9IME' 
+
+Info: Demotion information: 
+      Disconnected 1 data pins from global 'i2c_top_0/uut/i2c_clk_inferred_clock_RNI9IME'. 
+Info: CMPG4-302: Added 0 row global instances.
+Info: CMPG4-303: Deleted 0 global instances.
+
+===============================================================================.
+

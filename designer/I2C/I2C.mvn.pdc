@@ -1,0 +1,40 @@
+# Microchip Physical design constraints file
+
+# Version: 2023.2 2023.2.0.8
+
+# Design Name:  
+
+# Input Netlist Format: EDIF 
+
+# Family: SmartFusion2 , Die: M2S050 , Package: 484 FBGA , Speed grade: STD 
+
+# Date generated: Sun Nov 10 20:27:57 2024 
+
+
+#
+# IO banks setting
+#
+
+set_iobank Bank1 -vcci 3.30 -fixed no
+
+#
+# Local clock constraints
+#
+
+
+#
+# Region constraints
+#
+
+
+#
+# I/O constraints
+#
+
+set_io MMUART_0_RXD -DIRECTION INPUT -pinname C22 -fixed yes
+set_io MMUART_0_TXD -DIRECTION OUTPUT -pinname D21 -fixed yes
+
+#
+# Core cell constraints
+#
+

@@ -1,0 +1,183 @@
+Resource Report
+Microchip Technology Inc. - Microchip Libero Software Release v2023.2 (Version 2023.2.0.8)
+Date: Sun Nov 10 20:27:56 2024
+
+Device Selection
++--------------------------------+----------------+
+| Family                         | SmartFusion2   |
+| Device                         | M2S050         |
+| Package                        | 484 FBGA       |
+| Speed Grade                    | STD            |
+| Temp                           | 0:25:85        |
+| Voltage                        | 1.26:1.20:1.14 |
+| Core Voltage                   | 1.2V           |
+| Ramp Rate                      | 100ms Minimum  |
+| System Controller Suspend Mode | No             |
+| PLL Supply Voltage             | 3.3V           |
+| Default I/O technology         | LVCMOS 3.3V    |
+| Restrict Probe Pins            | Yes            |
+| Restrict SPI Pins              | No             |
++--------------------------------+----------------+
+
+Source Files
++---------+------------------------------------------+
+| Topcell | I2C                                      |
+| Format  | Verilog                                  |
+| Source  | E:\Verilog_1st_year\I2C\synthesis\I2C.vm |
++---------+------------------------------------------+
+
+Options
++----------------------------------------------------+-------+
+| Enable Single Event Transient mitigation           | false |
+| Enable Design Separation Methodology               | false |
+| Limit the number of high fanout nets to display to | 10    |
++----------------------------------------------------+-------+
+
+Resource Usage
++---------------------------+------+-------+------------+
+| Type                      | Used | Total | Percentage |
++---------------------------+------+-------+------------+
+| 4LUT                      | 64   | 56340 | 0.11       |
+| DFF                       | 27   | 56340 | 0.05       |
+| I/O Register              | 0    | 801   | 0.00       |
+| User I/O                  | 14   | 267   | 5.24       |
+| -- Single-ended I/O       | 14   | 267   | 5.24       |
+| -- Differential I/O Pairs | 0    | 133   | 0.00       |
+| RAM64x18                  | 0    | 72    | 0.00       |
+| RAM1K18                   | 0    | 69    | 0.00       |
+| MACC                      | 0    | 72    | 0.00       |
+| Chip Globals              | 2    | 16    | 12.50      |
+| CCC                       | 1    | 6     | 16.67      |
+| RCOSC_25_50MHZ            | 1    | 1     | 100.00     |
+| RCOSC_1MHZ                | 0    | 1     | 0.00       |
+| XTLOSC                    | 0    | 1     | 0.00       |
+| MSS                       | 1    | 1     | 100.00     |
++---------------------------+------+-------+------------+
+
+Detailed Logic Resource Usage
++--------------------------+------+-----+
+| Type                     | 4LUT | DFF |
++--------------------------+------+-----+
+| Fabric Logic             | 64   | 27  |
+| RAM64x18 Interface Logic | 0    | 0   |
+| RAM1K18 Interface Logic  | 0    | 0   |
+| MACC Interface Logic     | 0    | 0   |
+| Total Used               | 64   | 27  |
++--------------------------+------+-----+
+
+MSS Resource Usage
++---------------+------+-------+
+| Type          | Used | Total |
++---------------+------+-------+
+| Cortex-M3*    | 1    | 1     |
+| eNVM (256KB)* | 1    | 1     |
+| eSRAM*        | 2    | 2     |
+| TIMER*        | 2    | 2     |
+| CAN           | 0    | 1     |
+| SPI           | 0    | 2     |
+| I2C           | 0    | 2     |
+| UART          | 1    | 2     |
+| USB           | 0    | 1     |
+| MAC           | 0    | 1     |
+| MDDR          | 0    | 1     |
+| HPDMA         | 1    | 1     |
+| PDMA          | 1    | 1     |
++---------------+------+-------+
+
+* These resources are always marked as used when you are using the MSS
+
+Detailed Carry Chains Resource Usage
++--------+------+
+| Length | Used |
+| 7      | 1    |
+| Total  | 1    |
++--------+------+
+
+I/O Function
++-------------------------------+--------------+-------------+-----------------+
+| Type                          | w/o register | w/ register | w/ DDR register |
++-------------------------------+--------------+-------------+-----------------+
+| Input I/O                     | 1            | 0           | 0               |
+| Output I/O                    | 12           | 0           | 0               |
+| Bidirectional I/O             | 1            | 0           | 0               |
+| Differential Input I/O Pairs  | 0            | 0           | 0               |
+| Differential Output I/O Pairs | 0            | 0           | 0               |
++-------------------------------+--------------+-------------+-----------------+
+
+I/O Technology
++--------------+--------+------+-------+--------+---------------+
+| I/O Standard | Vddi   | Vref | Input | Output | Bidirectional |
++--------------+--------+------+-------+--------+---------------+
+| LVCMOS33     |  3.30v |  N/A |  1    |  12    |  1            |
++--------------+--------+------+-------+--------+---------------+
+
+Nets assigned to chip global resources
++--------+---------+--------------------------------------------------------------+
+| Fanout | Type    | Name                                                         |
++--------+---------+--------------------------------------------------------------+
+| 19     | INT_NET | Net   : i2c_top_0/uut/i2c_clk_Z                              |
+|        |         | Driver: i2c_top_0/uut/i2c_clk_inferred_clock_RNI9IME/U0_RGB1 |
+|        |         | Source: NETLIST                                              |
+| 9      | INT_NET | Net   : I2C_sb_0_FAB_CCC_GL0                                 |
+|        |         | Driver: I2C_sb_0/CCC_0/GL0_INST/U0_RGB1                      |
+|        |         | Source: NETLIST                                              |
++--------+---------+--------------------------------------------------------------+
+
+Nets assigned to row global resources
++--------+------+------+
+| Fanout | Type | Name |
++--------+------+------+
++--------+------+------+
+
+High fanout nets
++--------+---------+-----------------------------------------+
+| Fanout | Type    | Name                                    |
++--------+---------+-----------------------------------------+
+| 15     | INT_NET | Net   : i2c_top_0/uut/counter_Z[0]      |
+|        |         | Driver: i2c_top_0/uut/counter[0]        |
+| 14     | INT_NET | Net   : i2c_top_0/uut/counter_Z[1]      |
+|        |         | Driver: i2c_top_0/uut/counter[1]        |
+| 13     | INT_NET | Net   : i2c_top_0/uut/counter_Z[2]      |
+|        |         | Driver: i2c_top_0/uut/counter[2]        |
+| 12     | INT_NET | Net   : sda_in                          |
+|        |         | Driver: sda_iobuf                       |
+| 11     | INT_NET | Net   : i2c_top_0/uut/state_Z[3]        |
+|        |         | Driver: i2c_top_0/uut/state[3]          |
+| 11     | INT_NET | Net   : i2c_top_0/uut/state_Z[1]        |
+|        |         | Driver: i2c_top_0/uut/state[1]          |
+| 10     | INT_NET | Net   : i2c_top_0/uut/state_Z[0]        |
+|        |         | Driver: i2c_top_0/uut/state[0]          |
+| 9      | INT_NET | Net   : i2c_top_0/uut/state_Z[2]        |
+|        |         | Driver: i2c_top_0/uut/state[2]          |
+| 8      | INT_NET | Net   : i2c_top_0/uut/N_104             |
+|        |         | Driver: i2c_top_0/uut/data_out_2_0_0_a2 |
+| 7      | INT_NET | Net   : i2c_top_0/uut/state56           |
+|        |         | Driver: i2c_top_0/uut/state56_0_a3      |
++--------+---------+-----------------------------------------+
+
+High fanout nets (through buffer trees)
++--------+---------+-----------------------------------------+
+| Fanout | Type    | Name                                    |
++--------+---------+-----------------------------------------+
+| 15     | INT_NET | Net   : i2c_top_0/uut/counter_Z[0]      |
+|        |         | Driver: i2c_top_0/uut/counter[0]        |
+| 14     | INT_NET | Net   : i2c_top_0/uut/counter_Z[1]      |
+|        |         | Driver: i2c_top_0/uut/counter[1]        |
+| 13     | INT_NET | Net   : i2c_top_0/uut/counter_Z[2]      |
+|        |         | Driver: i2c_top_0/uut/counter[2]        |
+| 12     | INT_NET | Net   : sda_in                          |
+|        |         | Driver: sda_iobuf                       |
+| 11     | INT_NET | Net   : i2c_top_0/uut/state_Z[3]        |
+|        |         | Driver: i2c_top_0/uut/state[3]          |
+| 11     | INT_NET | Net   : i2c_top_0/uut/state_Z[1]        |
+|        |         | Driver: i2c_top_0/uut/state[1]          |
+| 10     | INT_NET | Net   : i2c_top_0/uut/state_Z[0]        |
+|        |         | Driver: i2c_top_0/uut/state[0]          |
+| 9      | INT_NET | Net   : i2c_top_0/uut/state_Z[2]        |
+|        |         | Driver: i2c_top_0/uut/state[2]          |
+| 8      | INT_NET | Net   : i2c_top_0/uut/N_104             |
+|        |         | Driver: i2c_top_0/uut/data_out_2_0_0_a2 |
+| 7      | INT_NET | Net   : i2c_top_0/uut/state56           |
+|        |         | Driver: i2c_top_0/uut/state56_0_a3      |
++--------+---------+-----------------------------------------+
+

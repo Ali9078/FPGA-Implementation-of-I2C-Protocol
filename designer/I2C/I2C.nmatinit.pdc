@@ -1,0 +1,135 @@
+# Microchip Physical design constraints file
+
+# Version: 2023.2 2023.2.0.8
+
+# Design Name: I2C 
+
+# Input Netlist Format: EDIF 
+
+# Family: SmartFusion2 , Die: M2S050 , Package: 484 FBGA , Speed grade: STD 
+
+# Date generated: Sun Nov 10 20:29:40 2024 
+
+
+#
+# I/O constraints
+#
+
+set_io MMUART_0_RXD -DIRECTION INPUT -pinname C22 -fixed no
+set_io MMUART_0_TXD -DIRECTION OUTPUT -pinname D21 -fixed no
+set_io data_out\[0\] -DIRECTION OUTPUT -pinname K18 -fixed no
+set_io data_out\[1\] -DIRECTION OUTPUT -pinname L18 -fixed no
+set_io data_out\[2\] -DIRECTION OUTPUT -pinname K15 -fixed no
+set_io data_out\[3\] -DIRECTION OUTPUT -pinname L16 -fixed no
+set_io data_out\[4\] -DIRECTION OUTPUT -pinname K17 -fixed no
+set_io data_out\[5\] -DIRECTION OUTPUT -pinname J18 -fixed no
+set_io data_out\[6\] -DIRECTION OUTPUT -pinname K20 -fixed no
+set_io data_out\[7\] -DIRECTION OUTPUT -pinname L19 -fixed no
+set_io read_data -DIRECTION OUTPUT -pinname N16 -fixed no
+set_io ready -DIRECTION OUTPUT -pinname B1 -fixed no
+set_io scl -DIRECTION OUTPUT -pinname P18 -fixed no
+set_io sda -DIRECTION INOUT -pinname C3 -fixed no
+
+#
+# Core cell constraints
+#
+
+set_location i2c_top_0/uut/data_out\[7\] -fixed no 777 64
+set_location i2c_top_0/uut/counter_9_iv_i\[2\] -fixed no 761 66
+set_location i2c_top_0/uut/un23_ready_0_a3 -fixed no 753 66
+set_location i2c_top_0/uut/counter_9_iv_i\[0\] -fixed no 757 66
+set_location i2c_top_0/uut/un1_state15_i_o2_RNI98QS -fixed no 767 66
+set_location i2c_top_0/uut/i2c_clk -fixed no 597 88
+set_location i2c_top_0/uut/state\[0\] -fixed no 764 67
+set_location i2c_top_0/uut/un1_state_6_0_a3 -fixed no 755 66
+set_location i2c_top_0/uut/state_cnst_0_0_0\[1\] -fixed no 744 66
+set_location i2c_top_0/uut/sda_out_1 -fixed no 758 69
+set_location i2c_top_0/uut/data_out_4_0_0_a3 -fixed no 774 63
+set_location i2c_top_0/uut/write_enable_1 -fixed no 761 69
+set_location i2c_top_0/uut/state\[2\] -fixed no 751 67
+set_location i2c_top_0/uut/counter\[1\] -fixed no 762 67
+set_location i2c_top_0/uut/clk_count\[0\] -fixed no 595 88
+set_location i2c_top_0/uut/i2c_clk_inferred_clock_RNI9IME -fixed no 441 108
+set_location i2c_top_0/uut/un2_ready_i_1_a2 -fixed no 759 69
+set_location i2c_top_0/uut/state_cnst_i_m3_i_m2\[3\] -fixed no 752 66
+set_location i2c_top_0/uut/data_out_2_0_0_a2 -fixed no 765 63
+set_location i2c_top_0/uut/counter\[2\] -fixed no 761 67
+set_location i2c_top_0/uut/clk_count\[3\] -fixed no 591 88
+set_location i2c_top_0/uut/data_out_3_0_0_a3 -fixed no 757 63
+set_location i2c_top_0/uut/counter_RNO\[3\] -fixed no 765 66
+set_location i2c_top_0/uut/state_7_sqmuxa_0_0 -fixed no 756 66
+set_location i2c_top_0/uut/un1_state_2_0_a3 -fixed no 747 66
+set_location i2c_top_0/uut/data_out\[5\] -fixed no 828 64
+set_location i2c_top_0/uut/clk_count\[5\] -fixed no 593 88
+set_location i2c_top_0/uut/state63_0_a3 -fixed no 764 69
+set_location i2c_top_0/uut/data_out\[3\] -fixed no 772 64
+set_location i2c_top_0/uut/state_cnst_0_0\[1\] -fixed no 748 66
+set_location i2c_top_0/uut/state_1_sqmuxa_i_o3_RNIU6QI -fixed no 754 69
+set_location i2c_top_0/uut/state56_0_a3 -fixed no 755 69
+set_location i2c_top_0/uut/un1_state15_i_o2_RNIF0B11 -fixed no 753 69
+set_location i2c_top_0/uut/data_out\[0\] -fixed no 837 64
+set_location i2c_top_0/uut/sda_out -fixed no 758 70
+set_location i2c_top_0/uut/i2c_scl_enable10_i_a3 -fixed no 756 69
+set_location i2c_top_0/uut/i2c_clk5_0 -fixed no 598 87
+set_location i2c_top_0/uut/un1_state_2_0_a3_RNI44OG -fixed no 749 66
+set_location i2c_top_0/uut/state_RNO\[0\] -fixed no 764 66
+set_location i2c_top_0/uut/write_enable -fixed no 761 70
+set_location i2c_top_0/uut/counter\[3\] -fixed no 765 67
+set_location i2c_top_0/uut/clk_count\[4\] -fixed no 592 88
+set_location i2c_top_0/uut/i2c_clk5_4 -fixed no 596 87
+set_location i2c_top_0/uut/un1__decfrac0_0_0 -fixed no 759 66
+set_location i2c_top_0/uut/write_enablece -fixed no 752 69
+set_location i2c_top_0/uut/sda_out_1_1 -fixed no 757 69
+set_location i2c_top_0/uut/state_cnst_0_0\[2\] -fixed no 751 66
+set_location i2c_top_0/uut/data_out_1_0_0_a3 -fixed no 762 63
+set_location i2c_top_0/uut/clk_count\[2\] -fixed no 590 88
+set_location I2C_sb_0/FABOSC_0/I_RCOSC_25_50MHZ -fixed no 24 194
+set_location I2C_sb_0/CCC_0/GL0_INST/U0_RGB1 -fixed no 662 186
+set_location i2c_top_0/uut/sda_outce -fixed no 751 69
+set_location ip_interface_inst -fixed no 191 0
+set_location i2c_top_0/uut/counter\[0\] -fixed no 757 67
+set_location i2c_top_0/uut/un1_state_3_0_a3 -fixed no 763 69
+set_location i2c_top_0/uut/un23_ready_0_a3_RNIAO8V1 -fixed no 747 69
+set_location i2c_top_0/uut/data_out\[6\] -fixed no 779 64
+set_location i2c_top_0/uut/data_out_8_0_0_a3 -fixed no 769 63
+set_location i2c_top_0/uut/i2c_scl_enable -fixed no 756 70
+set_location i2c_top_0/uut/counter_9_iv_i\[1\] -fixed no 762 66
+set_location i2c_top_0/uut/state_1_sqmuxa_3_i_o3 -fixed no 749 69
+set_location i2c_top_0/uut/un1_counter_1_1.SUM_0_x2\[1\] -fixed no 763 66
+set_location i2c_top_0/uut/un11_scl\[0\] -fixed no 765 69
+set_location i2c_top_0/uut/state_1_sqmuxa_i_o3 -fixed no 750 69
+set_location i2c_top_0/uut/un1_counter_1_1.CO2_1 -fixed no 758 66
+set_location i2c_top_0/uut/un2_ready_i_1_a2_RNIHVBT2 -fixed no 748 69
+set_location i2c_top_0/uut/state\[1\] -fixed no 748 67
+set_location i2c_top_0/uut/sda_out_4_iv_0_a3 -fixed no 760 69
+set_location i2c_top_0/uut/clk_count\[6\] -fixed no 594 88
+set_location i2c_top_0/uut/clk_count_RNO\[0\] -fixed no 595 87
+set_location i2c_top_0/uut/un1_state15_i_o2 -fixed no 754 66
+set_location i2c_top_0/uut/data_out_5_0_0_a3 -fixed no 770 63
+set_location i2c_top_0/uut/data_out\[2\] -fixed no 758 64
+set_location flash_freeze_inst/INST_FLASH_FREEZE_IP -fixed no 876 8
+set_location i2c_top_0/uut/state\[3\] -fixed no 752 67
+set_location i2c_top_0/uut/un1_counter_1_1.SUM\[2\] -fixed no 766 66
+set_location i2c_top_0/uut/data_out_6_0_0_a3 -fixed no 775 63
+set_location i2c_top_0/uut/state_1_sqmuxa_3_i_o3_RNIGKNL -fixed no 746 69
+set_location i2c_top_0/uut/i2c_clk_1 -fixed no 597 87
+set_location i2c_top_0/uut/clk_count\[1\] -fixed no 589 88
+set_location i2c_top_0/uut/data_out_2_0_0_a3 -fixed no 768 63
+set_location i2c_top_0/uut/un1_state_3_0_a3_RNI6F8P3 -fixed no 745 69
+set_location i2c_top_0/uut/un1_state_4_0_a3 -fixed no 750 66
+set_location i2c_top_0/uut/un1_state15_i_a2 -fixed no 760 66
+set_location i2c_top_0/uut/data_out\[1\] -fixed no 759 64
+set_location i2c_top_0/uut/data_out\[4\] -fixed no 771 64
+set_location i2c_top_0/uut/state_3_sqmuxa_0_a3 -fixed no 745 66
+set_location i2c_top_0/uut/un1_state_3_0_a3_RNIERDH -fixed no 744 69
+set_location ip_interface_inst_1 -fixed no 191 204
+set_location i2c_top_0/uut/data_out_7_0_0_a3 -fixed no 773 63
+set_location i2c_top_0/uut/i2c_clk_inferred_clock_RNI9IME/U0_RGB1 -fixed no 662 69
+set_location I2C_sb_0/CCC_0/GL0_INST -fixed no 437 108
+set_location I2C_sb_0/CCC_0/CCC_INST -fixed no 18 194
+set_location I2C_sb_0/I2C_sb_MSS_0/MSS_ADLIB_INST -fixed no 744 206
+set_location i2c_top_0/uut/clk_count_s_38 -fixed no 588 87
+set_location I2C_sb_0/CCC_0/GL0_INST/U0_RGB1_RGB0 -fixed no 662 87
+set_location i2c_top_0/uut/i2c_clk_inferred_clock_RNI9IME/U0_RGB1_RGB0 -fixed no 662 66
+set_location i2c_top_0/uut/i2c_clk_inferred_clock_RNI9IME/U0_RGB1_RGB1 -fixed no 662 63
+set_location i2c_top_0/uut/clk_count_s_38_CC_0 -fixed no 588 89

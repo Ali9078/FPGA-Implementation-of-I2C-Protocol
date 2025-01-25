@@ -1,0 +1,7 @@
+Detailed Resource Usage
+Module Name,Fabric 4LUT,Fabric DFF,Single-Ended I/O,PLLs and CCCs,Chip Globals,MSS,CAN,10/100/1000 Ethernet,HS USB,Multi-Mode UART,RCOSC_50MHZ
+I2C_sb_0/CCC_0/Primitives,0,0,0,1,1,0,0,0,0,0,0
+I2C_sb_0/FABOSC_0/Primitives,0,0,0,0,0,0,0,0,0,0,1
+I2C_sb_0/I2C_sb_MSS_0/Primitives,0,0,2,0,0,1,0,0,0,0,0
+Primitives/Primitives,0,0,12,0,0,0,0,0,0,0,0
+i2c_top_0/uut/Primitives,64,27,0,0,1,0,0,0,0,0,0

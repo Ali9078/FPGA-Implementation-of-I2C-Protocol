@@ -1,0 +1,71 @@
+Info: No timing constraint has been associated to the 'Place and Route' tool. 'Place and Route' will be run in non Timing Driven mode.
+INFO: The option "Abort flow if errors are found in PDC" is turned ON in Project Settings> Design flow page. The Place & Route tool will fail if errors are found in associated PDC files. Please uncheck the option to ignore the errors and continue running the tool
+***** Place and Route Configurations *****
+Timing-driven            : OFF
+Power-driven             : OFF
+I/O Register Combining   : OFF
+High-effort              : OFF
+Repair min-delay         : OFF
+Incremental              : OFF
+
+INFO: Reading User PDC file E:\Verilog_1st_year\I2C\constraint\io\user.pdc. 0 error(s) and 0 warning(s)
+
+Running the I/O Bank and Globals Assigner.
+Info:  I/O Bank and Globals Assigner identified 6 fixed I/O macros, 8 unfixed I/O macros
+
+I/O Bank and Globals Assigner completed successfully.
+Total time spent in I/O Bank and Globals Assigner: 0 seconds
+
+Placer V5.0 - 2023.2.0 
+Design: I2C                             Started: Sun Nov 10 20:28:08 2024
+
+Initializing Normal-Effort Standard Placement ...
+Clustering ...
+Placing ...
+Improving placement ...
+End of placement.
+
+Placer Runtime Summary   :
+Clustering (1 pass)      : 1 seconds
+Placement                : 0 seconds
+Improvement              : 0 seconds
+
+Placer completed successfully.
+
+Design: I2C                             
+Finished: Sun Nov 10 20:28:15 2024
+Total CPU Time:     00:00:05            Total Elapsed Time: 00:00:07
+Total Memory Usage: 187.5 Mbytes
+                        o - o - o - o - o - o
+
+
+Router 
+Design: E:\Verilog_1st_year\I2C\designer\I2C\I2CStarted: Sun Nov 10 20:28:21 2024
+
+
+Router completed successfully.
+
+Design: E:\Verilog_1st_year\I2C\designer\I2C\I2C
+Finished: Sun Nov 10 20:29:39 2024
+Total CPU Time:     00:00:18            Total Elapsed Time: 00:01:18
+Total Memory Usage: 1461.2 Mbytes
+                        o - o - o - o - o - o
+
+Resource Usage
++---------------+------+-------+------------+
+| Type          | Used | Total | Percentage |
++---------------+------+-------+------------+
+| 4LUT          | 64   | 56340 | 0.11       |
+| DFF           | 27   | 56340 | 0.05       |
+| I/O Register  | 0    | 795   | 0.00       |
+| Logic Element | 72   | 56340 | 0.13       |
++---------------+------+-------+------------+
+
+I/O Placement
++--------+-------+------------+
+| Type   | Count | Percentage |
++--------+-------+------------+
+| Locked |  6    | 42.86%     |
+| Placed |  8    | 57.14%     |
++--------+-------+------------+
+
