@@ -1,0 +1,7 @@
+C:\Microchip\Libero_SoC_v2023.2\SynplifyPro\bin64\syn_nfilter.exe  -link  -top  I2C  -multisrs  E:\Verilog_1st_year\I2C\synthesis\synwork\I2C_comp.srs  -osyn  E:\Verilog_1st_year\I2C\synthesis\synwork\I2C_mult.srs  -log  E:\Verilog_1st_year\I2C\synthesis\synlog\I2C_multi_srs_gen.srr 
+relcom:C:\Microchip\Libero_SoC_v2023.2\SynplifyPro\bin64\syn_nfilter.exe -link -top I2C -multisrs ..\synwork\I2C_comp.srs -osyn ..\synwork\I2C_mult.srs -log ..\synlog\I2C_multi_srs_gen.srr
+rc:0 success:1 runtime:1
+file:..\synwork\I2C_comp.srs|io:i|time:1731250657|size:83435|exec:0|csum:1D549F29F1C429339702AD4D3092FFE0
+file:..\synwork\I2C_mult.srs|io:o|time:1731250659|size:2890|exec:0|csum:
+file:..\synlog\I2C_multi_srs_gen.srr|io:o|time:1731250659|size:1150|exec:0|csum:
+file:C:\Microchip\Libero_SoC_v2023.2\SynplifyPro\bin64\syn_nfilter.exe|io:i|time:1691490330|size:10452480|exec:1|csum:C2B49D9CC1CC5913A59BA97F5F9B52BC

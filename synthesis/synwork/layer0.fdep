@@ -1,0 +1,72 @@
+#OPTIONS:"|-layerid|0|-orig_srs|E:\\Verilog_1st_year\\I2C\\synthesis\\synwork\\I2C_comp.srs|-top|I2C|-prodtype|synplify_pro|-infer_seqShift|-primux|-dspmac|-pqdpadd|-fixsmult|-sdff_counter|-divnmod|-nram|-actel|-I|E:\\Verilog_1st_year\\I2C\\synthesis\\|-I|C:\\Microchip\\Libero_SoC_v2023.2\\SynplifyPro\\lib|-sysv|-devicelib|C:\\Microchip\\Libero_SoC_v2023.2\\SynplifyPro\\lib\\generic\\smartfusion2.v|-encrypt|-pro|-ui|-fid2|-ram|-sharing|on|-ll|2000|-autosm|-lib|work|-lib|work|-lib|work|-lib|work|-lib|work|-lib|work|-lib|work|-lib|work|-lib|work|-lib|work|-lib|work"
+#CUR:"C:\\Microchip\\Libero_SoC_v2023.2\\SynplifyPro\\bin64\\c_ver.exe":1691490330
+#CUR:"C:\\Microchip\\Libero_SoC_v2023.2\\SynplifyPro\\lib\\generic\\smartfusion2.v":1691490345
+#CUR:"C:\\Microchip\\Libero_SoC_v2023.2\\SynplifyPro\\lib\\vlog\\hypermods.v":1691490346
+#CUR:"C:\\Microchip\\Libero_SoC_v2023.2\\SynplifyPro\\lib\\vlog\\umr_capim.v":1691490346
+#CUR:"C:\\Microchip\\Libero_SoC_v2023.2\\SynplifyPro\\lib\\vlog\\scemi_objects.v":1691490346
+#CUR:"C:\\Microchip\\Libero_SoC_v2023.2\\SynplifyPro\\lib\\vlog\\scemi_pipes.svh":1691490346
+#CUR:"E:\\Verilog_1st_year\\I2C\\component\\work\\I2C_sb\\CCC_0\\I2C_sb_CCC_0_FCCC.v":1730732912
+#CUR:"E:\\Verilog_1st_year\\I2C\\component\\Actel\\SgCore\\OSC\\2.0.101\\osc_comps.v":1728911982
+#CUR:"E:\\Verilog_1st_year\\I2C\\component\\work\\I2C_sb\\FABOSC_0\\I2C_sb_FABOSC_0_OSC.v":1730732914
+#CUR:"E:\\Verilog_1st_year\\I2C\\component\\work\\I2C_sb_MSS\\I2C_sb_MSS_syn.v":1730732908
+#CUR:"E:\\Verilog_1st_year\\I2C\\component\\work\\I2C_sb_MSS\\I2C_sb_MSS.v":1730732909
+#CUR:"E:\\Verilog_1st_year\\I2C\\component\\Actel\\DirectCore\\CoreResetP\\7.1.100\\rtl\\vlog\\core\\coreresetp_pcie_hotreset.v":1728911980
+#CUR:"E:\\Verilog_1st_year\\I2C\\component\\Actel\\DirectCore\\CoreResetP\\7.1.100\\rtl\\vlog\\core\\coreresetp.v":1728911980
+#CUR:"E:\\Verilog_1st_year\\I2C\\component\\work\\I2C_sb\\I2C_sb.v":1730732914
+#CUR:"E:\\Verilog_1st_year\\I2C\\hdl\\i2c_master.v":1731139022
+#CUR:"E:\\Verilog_1st_year\\I2C\\hdl\\i2c_top.v":1731250491
+#CUR:"E:\\Verilog_1st_year\\I2C\\component\\work\\I2C\\I2C.v":1731250602
+#numinternalfiles:5
+#defaultlanguage:verilog
+0			"E:\Verilog_1st_year\I2C\component\work\I2C_sb\CCC_0\I2C_sb_CCC_0_FCCC.v" verilog
+1			"E:\Verilog_1st_year\I2C\component\Actel\SgCore\OSC\2.0.101\osc_comps.v" verilog
+2			"E:\Verilog_1st_year\I2C\component\work\I2C_sb\FABOSC_0\I2C_sb_FABOSC_0_OSC.v" verilog
+3			"E:\Verilog_1st_year\I2C\component\work\I2C_sb_MSS\I2C_sb_MSS_syn.v" verilog
+4			"E:\Verilog_1st_year\I2C\component\work\I2C_sb_MSS\I2C_sb_MSS.v" verilog
+5			"E:\Verilog_1st_year\I2C\component\Actel\DirectCore\CoreResetP\7.1.100\rtl\vlog\core\coreresetp_pcie_hotreset.v" verilog
+6			"E:\Verilog_1st_year\I2C\component\Actel\DirectCore\CoreResetP\7.1.100\rtl\vlog\core\coreresetp.v" verilog
+7			"E:\Verilog_1st_year\I2C\component\work\I2C_sb\I2C_sb.v" verilog
+8			"E:\Verilog_1st_year\I2C\hdl\i2c_master.v" verilog
+9			"E:\Verilog_1st_year\I2C\hdl\i2c_top.v" verilog
+10			"E:\Verilog_1st_year\I2C\component\work\I2C\I2C.v" verilog
+#Dependency Lists(Uses List)
+0 -1
+1 -1
+2 1
+3 -1
+4 3
+5 -1
+6 5
+7 0 6 2 4
+8 -1
+9 8
+10 7 9
+#Dependency Lists(Users Of)
+0 7
+1 2
+2 7
+3 4
+4 7
+5 6
+6 7
+7 10
+8 9
+9 10
+10 -1
+#Design Unit to File Association
+module work I2C_sb_CCC_0_FCCC 0
+module work RCOSC_1MHZ 1
+module work RCOSC_25_50MHZ 1
+module work XTLOSC 1
+module work RCOSC_1MHZ_FAB 1
+module work RCOSC_25_50MHZ_FAB 1
+module work XTLOSC_FAB 1
+module work I2C_sb_FABOSC_0_OSC 2
+module work MSS_050 3
+module work I2C_sb_MSS 4
+module work coreresetp_pcie_hotreset 5
+module work CoreResetP 6
+module work I2C_sb 7
+module work i2c_master 8
+module work i2c_top 9
+module work I2C 10
