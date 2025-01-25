@@ -1,0 +1,13 @@
+Software Version: 2023.2.0.8
+Opened 'E:\Verilog_1st_year\I2C\designer\I2C\I2C_fp\I2C.pro'
+PDB file 'E:\Verilog_1st_year\I2C\designer\I2C\I2C.pdb' has been loaded successfully.
+DESIGN : I2C;  CHECKSUM : D8DA;  PDB_VERSION : 1.9
+Info: Programming Interface selected is JTAG.
+File/Folder 'E:\Verilog_1st_year\I2C\designer\I2C\I2C.ppd' will be overwritten.
+Successfully exported PPD file for currently secured device: 'E:\Verilog_1st_year\I2C\designer\I2C\I2C.ppd'; file programs Fabric.
+Fabric component bitstream digest: 263a06253a4b33f35b5162383988c2bd60180b9d26cf0ac74b6c85f57c7b6c6e
+Entire bitstream digest: ee08340aa90282fcacf9791fa4e15c0fe9fef303a3abbd296033034fefb58fc8
+Finished: Sun Nov 10 20:31:54 2024 (Elapsed time 00:00:30)
+
+Project saved.
+Project closed.
