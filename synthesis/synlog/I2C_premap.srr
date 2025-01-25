@@ -1,0 +1,175 @@
+# Sun Nov 10 20:27:39 2024
+
+
+Copyright (C) 1994-2022 Synopsys, Inc.
+This Synopsys software and all associated documentation are proprietary to Synopsys, Inc.
+and may only be used pursuant to the terms and conditions of a written license agreement
+with Synopsys, Inc. All other use, reproduction, modification, or distribution of the
+Synopsys software or the associated documentation is strictly prohibited.
+Tool: Synplify Pro (R)
+Build: T-2022.09M-SP2-1
+Install: C:\Microchip\Libero_SoC_v2023.2\SynplifyPro
+OS: Windows 10 or later
+Hostname: DESKTOP-6AKHTM4
+
+Implementation : synthesis
+Synopsys Microchip Technology Pre-mapping, Version map202209actsp2, Build 145R, Built Jun 27 2023 12:06:34, @
+
+
+Mapper Startup Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 123MB peak: 123MB)
+
+
+Done reading skeleton netlist (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 128MB peak: 137MB)
+
+Reading constraint file: E:\Verilog_1st_year\I2C\designer\I2C\synthesis.fdc
+@L: E:\Verilog_1st_year\I2C\synthesis\I2C_scck.rpt 
+See clock summary report "E:\Verilog_1st_year\I2C\synthesis\I2C_scck.rpt"
+@N: MF916 |Option synthesis_strategy=base is enabled. 
+@N: MF248 |Running in 64-bit mode.
+@N: MF667 |Clock conversion disabled. (Command "set_option -fix_gated_and_generated_clocks 0" in the project file.)
+
+Design Input Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 135MB peak: 137MB)
+
+
+Mapper Initialization Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 135MB peak: 137MB)
+
+
+Start loading timing files (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 135MB peak: 137MB)
+
+
+Finished loading timing files (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 136MB peak: 137MB)
+
+NConnInternalConnection caching is on
+@W: BN132 :"e:\verilog_1st_year\i2c\component\actel\directcore\coreresetp\7.1.100\rtl\vlog\core\coreresetp.v":1089:4:1089:9|Removing sequential instance I2C_sb_0.CORERESETP_0.MDDR_DDR_AXI_S_CORE_RESET_N_int because it is equivalent to instance I2C_sb_0.CORERESETP_0.FDDR_CORE_RESET_N_int. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: FX1172 :"e:\verilog_1st_year\i2c\hdl\i2c_master.v":75:4:75:9|User-specified initial value defined for instance i2c_top_0.uut.state[7:0] is being ignored due to limitations in architecture. 
+@W: FX1172 :"e:\verilog_1st_year\i2c\hdl\i2c_master.v":62:4:62:9|User-specified initial value defined for instance i2c_top_0.uut.i2c_scl_enable is being ignored due to limitations in architecture. 
+@W: FX1172 :"e:\verilog_1st_year\i2c\hdl\i2c_master.v":46:4:46:9|User-specified initial value defined for instance i2c_top_0.uut.clk_count[6:0] is being ignored due to limitations in architecture. 
+@W: FX1172 :"e:\verilog_1st_year\i2c\hdl\i2c_master.v":46:4:46:9|User-specified initial value defined for instance i2c_top_0.uut.i2c_clk is being ignored due to limitations in architecture. 
+@N: FX1171 :"e:\verilog_1st_year\i2c\hdl\i2c_master.v":154:0:154:5|Found instance i2c_top_0.uut.sda_out with reset/set having higher priority than enable. Selected technology supports register with enable having higher priority than reset/set. Adding glue logic to resolve priority. 
+@N: FX1171 :"e:\verilog_1st_year\i2c\hdl\i2c_master.v":154:0:154:5|Found instance i2c_top_0.uut.write_enable with reset/set having higher priority than enable. Selected technology supports register with enable having higher priority than reset/set. Adding glue logic to resolve priority. 
+@N: FX1171 :"e:\verilog_1st_year\i2c\hdl\i2c_master.v":46:4:46:9|Found instance i2c_top_0.uut.i2c_clk with reset/set having higher priority than enable. Selected technology supports register with enable having higher priority than reset/set. Adding glue logic to resolve priority. 
+
+Starting HSTDM IP insertion (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:00s; Memory used current: 171MB peak: 172MB)
+
+
+Finished HSTDM IP insertion (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:00s; Memory used current: 171MB peak: 172MB)
+
+@N: MO111 :"e:\verilog_1st_year\i2c\component\work\i2c_sb\fabosc_0\i2c_sb_fabosc_0_osc.v":17:7:17:20|Tristate driver RCOSC_1MHZ_CCC (in view: work.I2C_sb_FABOSC_0_OSC(verilog)) on net RCOSC_1MHZ_CCC (in view: work.I2C_sb_FABOSC_0_OSC(verilog)) has its enable tied to GND.
+@N: MO111 :"e:\verilog_1st_year\i2c\component\work\i2c_sb\fabosc_0\i2c_sb_fabosc_0_osc.v":18:7:18:20|Tristate driver RCOSC_1MHZ_O2F (in view: work.I2C_sb_FABOSC_0_OSC(verilog)) on net RCOSC_1MHZ_O2F (in view: work.I2C_sb_FABOSC_0_OSC(verilog)) has its enable tied to GND.
+@N: MO111 :"e:\verilog_1st_year\i2c\component\work\i2c_sb\fabosc_0\i2c_sb_fabosc_0_osc.v":19:7:19:16|Tristate driver XTLOSC_CCC (in view: work.I2C_sb_FABOSC_0_OSC(verilog)) on net XTLOSC_CCC (in view: work.I2C_sb_FABOSC_0_OSC(verilog)) has its enable tied to GND.
+@N: MO111 :"e:\verilog_1st_year\i2c\component\work\i2c_sb\fabosc_0\i2c_sb_fabosc_0_osc.v":20:7:20:16|Tristate driver XTLOSC_O2F (in view: work.I2C_sb_FABOSC_0_OSC(verilog)) on net XTLOSC_O2F (in view: work.I2C_sb_FABOSC_0_OSC(verilog)) has its enable tied to GND.
+@W: MO129 :"e:\verilog_1st_year\i2c\component\actel\directcore\coreresetp\7.1.100\rtl\vlog\core\coreresetp.v":676:4:676:9|Sequential instance I2C_sb_0.CORERESETP_0.SDIF0_PERST_N_q1 is reduced to a combinational gate by constant propagation.
+@W: MO129 :"e:\verilog_1st_year\i2c\component\actel\directcore\coreresetp\7.1.100\rtl\vlog\core\coreresetp.v":695:4:695:9|Sequential instance I2C_sb_0.CORERESETP_0.SDIF1_PERST_N_q1 is reduced to a combinational gate by constant propagation.
+@W: MO129 :"e:\verilog_1st_year\i2c\component\actel\directcore\coreresetp\7.1.100\rtl\vlog\core\coreresetp.v":714:4:714:9|Sequential instance I2C_sb_0.CORERESETP_0.SDIF2_PERST_N_q1 is reduced to a combinational gate by constant propagation.
+@W: MO129 :"e:\verilog_1st_year\i2c\component\actel\directcore\coreresetp\7.1.100\rtl\vlog\core\coreresetp.v":733:4:733:9|Sequential instance I2C_sb_0.CORERESETP_0.SDIF3_PERST_N_q1 is reduced to a combinational gate by constant propagation.
+@W: MO129 :"e:\verilog_1st_year\i2c\hdl\i2c_master.v":75:4:75:9|Sequential instance i2c_top_0.uut.save_data[1] is reduced to a combinational gate by constant propagation.
+@W: MO129 :"e:\verilog_1st_year\i2c\hdl\i2c_master.v":75:4:75:9|Sequential instance i2c_top_0.uut.save_data[7] is reduced to a combinational gate by constant propagation.
+@W: MO129 :"e:\verilog_1st_year\i2c\component\actel\directcore\coreresetp\7.1.100\rtl\vlog\core\coreresetp.v":769:4:769:9|Sequential instance I2C_sb_0.CORERESETP_0.sm1_areset_n_q1 is reduced to a combinational gate by constant propagation.
+@W: MO129 :"e:\verilog_1st_year\i2c\hdl\i2c_master.v":75:4:75:9|Sequential instance i2c_top_0.uut.save_addr[2] is reduced to a combinational gate by constant propagation.
+@W: MO129 :"e:\verilog_1st_year\i2c\component\actel\directcore\coreresetp\7.1.100\rtl\vlog\core\coreresetp.v":676:4:676:9|Sequential instance I2C_sb_0.CORERESETP_0.SDIF0_PERST_N_q2 is reduced to a combinational gate by constant propagation.
+@W: MO129 :"e:\verilog_1st_year\i2c\component\actel\directcore\coreresetp\7.1.100\rtl\vlog\core\coreresetp.v":695:4:695:9|Sequential instance I2C_sb_0.CORERESETP_0.SDIF1_PERST_N_q2 is reduced to a combinational gate by constant propagation.
+@W: MO129 :"e:\verilog_1st_year\i2c\component\actel\directcore\coreresetp\7.1.100\rtl\vlog\core\coreresetp.v":714:4:714:9|Sequential instance I2C_sb_0.CORERESETP_0.SDIF2_PERST_N_q2 is reduced to a combinational gate by constant propagation.
+@W: MO129 :"e:\verilog_1st_year\i2c\component\actel\directcore\coreresetp\7.1.100\rtl\vlog\core\coreresetp.v":733:4:733:9|Sequential instance I2C_sb_0.CORERESETP_0.SDIF3_PERST_N_q2 is reduced to a combinational gate by constant propagation.
+@W: MO129 :"e:\verilog_1st_year\i2c\component\actel\directcore\coreresetp\7.1.100\rtl\vlog\core\coreresetp.v":769:4:769:9|Sequential instance I2C_sb_0.CORERESETP_0.sm1_areset_n_clk_base is reduced to a combinational gate by constant propagation.
+@W: MO129 :"e:\verilog_1st_year\i2c\component\actel\directcore\coreresetp\7.1.100\rtl\vlog\core\coreresetp.v":676:4:676:9|Sequential instance I2C_sb_0.CORERESETP_0.SDIF0_PERST_N_q3 is reduced to a combinational gate by constant propagation.
+@W: MO129 :"e:\verilog_1st_year\i2c\component\actel\directcore\coreresetp\7.1.100\rtl\vlog\core\coreresetp.v":695:4:695:9|Sequential instance I2C_sb_0.CORERESETP_0.SDIF1_PERST_N_q3 is reduced to a combinational gate by constant propagation.
+@W: MO129 :"e:\verilog_1st_year\i2c\component\actel\directcore\coreresetp\7.1.100\rtl\vlog\core\coreresetp.v":714:4:714:9|Sequential instance I2C_sb_0.CORERESETP_0.SDIF2_PERST_N_q3 is reduced to a combinational gate by constant propagation.
+@W: MO129 :"e:\verilog_1st_year\i2c\component\actel\directcore\coreresetp\7.1.100\rtl\vlog\core\coreresetp.v":733:4:733:9|Sequential instance I2C_sb_0.CORERESETP_0.SDIF3_PERST_N_q3 is reduced to a combinational gate by constant propagation.
+@W: MO129 :"e:\verilog_1st_year\i2c\component\actel\directcore\coreresetp\7.1.100\rtl\vlog\core\coreresetp.v":1388:4:1388:9|Sequential instance I2C_sb_0.CORERESETP_0.RESET_N_F2M_int is reduced to a combinational gate by constant propagation.
+
+Started DisTri Cleanup (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:00s; Memory used current: 172MB peak: 172MB)
+
+
+Finished DisTri Cleanup (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:00s; Memory used current: 172MB peak: 172MB)
+
+@N: BN362 :"e:\verilog_1st_year\i2c\component\actel\directcore\coreresetp\7.1.100\rtl\vlog\core\coreresetp.v":1089:4:1089:9|Removing sequential instance DDR_READY_int (in view: work.CoreResetP_Z1(verilog)) of type view:PrimLib.dffre(prim) because it does not drive other instances.
+@N: BN362 :"e:\verilog_1st_year\i2c\component\actel\directcore\coreresetp\7.1.100\rtl\vlog\core\coreresetp.v":1089:4:1089:9|Removing sequential instance SDIF_READY_int (in view: work.CoreResetP_Z1(verilog)) of type view:PrimLib.dffre(prim) because it does not drive other instances.
+@N: BN362 :"e:\verilog_1st_year\i2c\component\actel\directcore\coreresetp\7.1.100\rtl\vlog\core\coreresetp.v":1089:4:1089:9|Removing sequential instance SDIF_RELEASED_int (in view: work.CoreResetP_Z1(verilog)) of type view:PrimLib.dffre(prim) because it does not drive other instances.
+@N: BN362 :"e:\verilog_1st_year\i2c\component\actel\directcore\coreresetp\7.1.100\rtl\vlog\core\coreresetp.v":1089:4:1089:9|Removing sequential instance FDDR_CORE_RESET_N_int (in view: work.CoreResetP_Z1(verilog)) of type view:PrimLib.dffre(prim) because it does not drive other instances.
+@N: BN362 :"e:\verilog_1st_year\i2c\component\actel\directcore\coreresetp\7.1.100\rtl\vlog\core\coreresetp.v":1170:4:1170:9|Removing sequential instance SDIF0_PHY_RESET_N_int (in view: work.CoreResetP_Z1(verilog)) of type view:PrimLib.dffre(prim) because it does not drive other instances.
+@N: BN362 :"e:\verilog_1st_year\i2c\component\actel\directcore\coreresetp\7.1.100\rtl\vlog\core\coreresetp.v":1170:4:1170:9|Removing sequential instance SDIF0_CORE_RESET_N_0 (in view: work.CoreResetP_Z1(verilog)) of type view:PrimLib.dffre(prim) because it does not drive other instances.
+@N: BN362 :"e:\verilog_1st_year\i2c\component\actel\directcore\coreresetp\7.1.100\rtl\vlog\core\coreresetp.v":1235:4:1235:9|Removing sequential instance SDIF1_PHY_RESET_N_int (in view: work.CoreResetP_Z1(verilog)) of type view:PrimLib.dffre(prim) because it does not drive other instances.
+@N: BN362 :"e:\verilog_1st_year\i2c\component\actel\directcore\coreresetp\7.1.100\rtl\vlog\core\coreresetp.v":1235:4:1235:9|Removing sequential instance SDIF1_CORE_RESET_N_0 (in view: work.CoreResetP_Z1(verilog)) of type view:PrimLib.dffre(prim) because it does not drive other instances.
+@N: BN362 :"e:\verilog_1st_year\i2c\component\actel\directcore\coreresetp\7.1.100\rtl\vlog\core\coreresetp.v":1300:4:1300:9|Removing sequential instance SDIF2_PHY_RESET_N_int (in view: work.CoreResetP_Z1(verilog)) of type view:PrimLib.dffre(prim) because it does not drive other instances.
+@N: BN362 :"e:\verilog_1st_year\i2c\component\actel\directcore\coreresetp\7.1.100\rtl\vlog\core\coreresetp.v":1300:4:1300:9|Removing sequential instance SDIF2_CORE_RESET_N_0 (in view: work.CoreResetP_Z1(verilog)) of type view:PrimLib.dffre(prim) because it does not drive other instances.
+@N: BN362 :"e:\verilog_1st_year\i2c\component\actel\directcore\coreresetp\7.1.100\rtl\vlog\core\coreresetp.v":1365:4:1365:9|Removing sequential instance SDIF3_PHY_RESET_N_int (in view: work.CoreResetP_Z1(verilog)) of type view:PrimLib.dffre(prim) because it does not drive other instances.
+@N: BN362 :"e:\verilog_1st_year\i2c\component\actel\directcore\coreresetp\7.1.100\rtl\vlog\core\coreresetp.v":1365:4:1365:9|Removing sequential instance SDIF3_CORE_RESET_N_0 (in view: work.CoreResetP_Z1(verilog)) of type view:PrimLib.dffre(prim) because it does not drive other instances.
+@N: BN362 :"e:\verilog_1st_year\i2c\component\actel\directcore\coreresetp\7.1.100\rtl\vlog\core\coreresetp.v":1170:4:1170:9|Removing sequential instance sdif0_state[3:0] (in view: work.CoreResetP_Z1(verilog)) of type view:PrimLib.statemachine(prim) because it does not drive other instances.
+@N: BN362 :"e:\verilog_1st_year\i2c\component\actel\directcore\coreresetp\7.1.100\rtl\vlog\core\coreresetp.v":1235:4:1235:9|Removing sequential instance sdif1_state[3:0] (in view: work.CoreResetP_Z1(verilog)) of type view:PrimLib.statemachine(prim) because it does not drive other instances.
+@N: BN362 :"e:\verilog_1st_year\i2c\component\actel\directcore\coreresetp\7.1.100\rtl\vlog\core\coreresetp.v":1300:4:1300:9|Removing sequential instance sdif2_state[3:0] (in view: work.CoreResetP_Z1(verilog)) of type view:PrimLib.statemachine(prim) because it does not drive other instances.
+@N: BN362 :"e:\verilog_1st_year\i2c\component\actel\directcore\coreresetp\7.1.100\rtl\vlog\core\coreresetp.v":1365:4:1365:9|Removing sequential instance sdif3_state[3:0] (in view: work.CoreResetP_Z1(verilog)) of type view:PrimLib.statemachine(prim) because it does not drive other instances.
+@N: BN362 :"e:\verilog_1st_year\i2c\component\actel\directcore\coreresetp\7.1.100\rtl\vlog\core\coreresetp.v":797:4:797:9|Removing sequential instance sdif0_areset_n_clk_base (in view: work.CoreResetP_Z1(verilog)) of type view:PrimLib.dffr(prim) because it does not drive other instances.
+@N: BN362 :"e:\verilog_1st_year\i2c\component\actel\directcore\coreresetp\7.1.100\rtl\vlog\core\coreresetp.v":811:4:811:9|Removing sequential instance sdif1_areset_n_clk_base (in view: work.CoreResetP_Z1(verilog)) of type view:PrimLib.dffr(prim) because it does not drive other instances.
+@N: BN362 :"e:\verilog_1st_year\i2c\component\actel\directcore\coreresetp\7.1.100\rtl\vlog\core\coreresetp.v":825:4:825:9|Removing sequential instance sdif2_areset_n_clk_base (in view: work.CoreResetP_Z1(verilog)) of type view:PrimLib.dffr(prim) because it does not drive other instances.
+@N: BN362 :"e:\verilog_1st_year\i2c\component\actel\directcore\coreresetp\7.1.100\rtl\vlog\core\coreresetp.v":839:4:839:9|Removing sequential instance sdif3_areset_n_clk_base (in view: work.CoreResetP_Z1(verilog)) of type view:PrimLib.dffr(prim) because it does not drive other instances.
+@N: BN362 :"e:\verilog_1st_year\i2c\component\actel\directcore\coreresetp\7.1.100\rtl\vlog\core\coreresetp.v":797:4:797:9|Removing sequential instance sdif0_areset_n_q1 (in view: work.CoreResetP_Z1(verilog)) of type view:PrimLib.dffr(prim) because it does not drive other instances.
+@N: BN362 :"e:\verilog_1st_year\i2c\component\actel\directcore\coreresetp\7.1.100\rtl\vlog\core\coreresetp.v":811:4:811:9|Removing sequential instance sdif1_areset_n_q1 (in view: work.CoreResetP_Z1(verilog)) of type view:PrimLib.dffr(prim) because it does not drive other instances.
+@N: BN362 :"e:\verilog_1st_year\i2c\component\actel\directcore\coreresetp\7.1.100\rtl\vlog\core\coreresetp.v":825:4:825:9|Removing sequential instance sdif2_areset_n_q1 (in view: work.CoreResetP_Z1(verilog)) of type view:PrimLib.dffr(prim) because it does not drive other instances.
+@N: BN362 :"e:\verilog_1st_year\i2c\component\actel\directcore\coreresetp\7.1.100\rtl\vlog\core\coreresetp.v":839:4:839:9|Removing sequential instance sdif3_areset_n_q1 (in view: work.CoreResetP_Z1(verilog)) of type view:PrimLib.dffr(prim) because it does not drive other instances.
+@N: FX1184 |Applying syn_allowed_resources blockrams=69 on top level netlist I2C 
+
+Finished netlist restructuring (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:00s; Memory used current: 173MB peak: 173MB)
+
+
+
+Clock Summary
+******************
+
+          Start                                                     Requested     Requested     Clock        Clock          Clock
+Level     Clock                                                     Frequency     Period        Type         Group          Load 
+---------------------------------------------------------------------------------------------------------------------------------
+0 -       I2C_sb_CCC_0_FCCC|GL0_net_inferred_clock                  100.0 MHz     10.000        inferred     (multiple)     44   
+                                                                                                                                 
+0 -       i2c_master|i2c_clk_inferred_clock                         100.0 MHz     10.000        inferred     (multiple)     28   
+                                                                                                                                 
+0 -       I2C_sb_FABOSC_0_OSC|RCOSC_25_50MHZ_CCC_inferred_clock     100.0 MHz     10.000        inferred     (multiple)     15   
+=================================================================================================================================
+
+
+
+Clock Load Summary
+***********************
+
+                                                          Clock     Source                                                        Clock Pin                                      Non-clock Pin     Non-clock Pin                                               
+Clock                                                     Load      Pin                                                           Seq Example                                    Seq Example       Comb Example                                                
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+I2C_sb_CCC_0_FCCC|GL0_net_inferred_clock                  44        I2C_sb_0.CCC_0.CCC_INST.GL0(CCC)                              i2c_top_0.uut.i2c_clk.C                        -                 I2C_sb_0.CCC_0.GL0_INST.I(BUFG)                             
+                                                                                                                                                                                                                                                               
+i2c_master|i2c_clk_inferred_clock                         28        i2c_top_0.uut.i2c_clk.Q[0](dffe)                              i2c_top_0.uut.data_out[7:0].C                  -                 i2c_top_0.uut.i2c_clk_2.I[0](inv)                           
+                                                                                                                                                                                                                                                               
+I2C_sb_FABOSC_0_OSC|RCOSC_25_50MHZ_CCC_inferred_clock     15        I2C_sb_0.FABOSC_0.I_RCOSC_25_50MHZ.CLKOUT(RCOSC_25_50MHZ)     I2C_sb_0.CORERESETP_0.release_sdif0_core.C     -                 I2C_sb_0.FABOSC_0.I_RCOSC_25_50MHZ_FAB.A(RCOSC_25_50MHZ_FAB)
+===============================================================================================================================================================================================================================================================
+
+@W: MT530 :"e:\verilog_1st_year\i2c\component\actel\directcore\coreresetp\7.1.100\rtl\vlog\core\coreresetp.v":565:4:565:9|Found inferred clock I2C_sb_CCC_0_FCCC|GL0_net_inferred_clock which controls 44 sequential elements including I2C_sb_0.CORERESETP_0.MSS_HPMS_READY_int. This clock has no specified timing constraint which may adversely impact design performance. 
+@W: MT530 :"e:\verilog_1st_year\i2c\hdl\i2c_master.v":75:4:75:9|Found inferred clock i2c_master|i2c_clk_inferred_clock which controls 28 sequential elements including i2c_top_0.uut.save_addr[7:6]. This clock has no specified timing constraint which may adversely impact design performance. 
+@W: MT530 :"e:\verilog_1st_year\i2c\component\actel\directcore\coreresetp\7.1.100\rtl\vlog\core\coreresetp.v":912:4:912:9|Found inferred clock I2C_sb_FABOSC_0_OSC|RCOSC_25_50MHZ_CCC_inferred_clock which controls 15 sequential elements including I2C_sb_0.CORERESETP_0.sdif3_areset_n_rcosc_q1. This clock has no specified timing constraint which may adversely impact design performance. 
+
+@N: FX1143 |Skipping assigning INTERNAL_VREF to iobanks, because the table of mapping from pin to iobank is not initialized.
+Finished Pre Mapping Phase.
+@N: BN225 |Writing default property annotation file E:\Verilog_1st_year\I2C\synthesis\I2C.sap.
+
+Starting constraint checker (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 174MB peak: 174MB)
+
+Encoding state machine sm0_state[6:0] (in view: work.CoreResetP_Z1(verilog))
+original code -> new code
+   000 -> 0000001
+   001 -> 0000010
+   010 -> 0000100
+   011 -> 0001000
+   100 -> 0010000
+   101 -> 0100000
+   110 -> 1000000
+
+Finished constraint checker preprocessing (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 176MB peak: 176MB)
+
+
+Finished constraint checker (Real Time elapsed 0h:00m:02s; CPU Time elapsed 0h:00m:01s; Memory used current: 176MB peak: 176MB)
+
+Pre-mapping successful!
+
+At Mapper Exit (Real Time elapsed 0h:00m:02s; CPU Time elapsed 0h:00m:01s; Memory used current: 86MB peak: 177MB)
+
+Process took 0h:00m:02s realtime, 0h:00m:01s cputime
+# Sun Nov 10 20:27:42 2024
+
+###########################################################]
