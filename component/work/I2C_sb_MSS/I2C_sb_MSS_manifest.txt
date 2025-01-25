@@ -1,0 +1,28 @@
+Microchip Technology Inc. - Microchip Libero Software Release v2023.2 (Version 2023.2.0.8)
+
+Date      :  Mon Nov  4 20:38:29 2024
+Project   :  E:\Verilog_1st_year\I2C
+Component :  I2C_sb_MSS
+Family    :  SmartFusion2
+
+
+HDL source files for all Synthesis and Simulation tools:
+    E:/Verilog_1st_year/I2C/component/work/I2C_sb_MSS/I2C_sb_MSS.v
+
+HDL source files for Synopsys SynplifyPro Synthesis tool:
+    E:/Verilog_1st_year/I2C/component/work/I2C_sb_MSS/I2C_sb_MSS_syn.v
+
+HDL source files for Mentor Precision Synthesis tool:
+    E:/Verilog_1st_year/I2C/component/work/I2C_sb_MSS/I2C_sb_MSS_pre.v
+
+Stimulus files for all Simulation tools:
+    E:/Verilog_1st_year/I2C/component/work/I2C_sb_MSS/CM3_compile_bfm.tcl
+    E:/Verilog_1st_year/I2C/component/work/I2C_sb_MSS/user.bfm
+    E:/Verilog_1st_year/I2C/component/work/I2C_sb_MSS/test.bfm
+    E:/Verilog_1st_year/I2C/component/Actel/SmartFusion2MSS/MSS/1.1.500/peripheral_init.bfm
+
+Firmware files for all Software IDE tools:
+    E:/Verilog_1st_year/I2C/component/work/I2C_sb_MSS/sys_config_mss_clocks.h
+
+Constraint files:
+    E:/Verilog_1st_year/I2C/component/work/I2C_sb_MSS\I2C_sb_MSS.sdc

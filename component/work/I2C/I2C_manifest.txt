@@ -1,0 +1,15 @@
+Microchip Technology Inc. - Microchip Libero Software Release v2023.2 (Version 2023.2.0.8)
+
+Date      :  Sun Nov 10 20:26:43 2024
+Project   :  E:\Verilog_1st_year\I2C
+Component :  I2C
+Family    :  SmartFusion2
+
+
+HDL source files for all Synthesis and Simulation tools:
+    E:/Verilog_1st_year/I2C/component/work/I2C/I2C.v
+
+Stimulus files for all Simulation tools:
+    E:/Verilog_1st_year/I2C/component/work/I2C/subsystem.bfm
+    E:/Verilog_1st_year/I2C/component/work/I2C/subsystem.bfm
+
